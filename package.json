@@ -1,0 +1,11 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch RomanToInt.js"
+  },
+  "author": "Prithwish Hati",
+  "license": "ISC"
+}
