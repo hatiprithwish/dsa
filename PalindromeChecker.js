@@ -51,3 +51,24 @@ const pdChecker4 = (str) => {
 
 console.log(pdChecker4("deed"));
 console.log(pdChecker4("mother"));
+
+// Phrase or sentence palindrome checker
+var isPalindrome = function (s) {
+  let regx = /[^a-zA-Z0-9]/g;
+  let newStr = s.replace(regx, "").toLowerCase();
+
+  let left = 0;
+  let right = newStr.length - 1;
+
+  while (left < right) {
+    if (newStr[left] !== newStr[right]) {
+      return false;
+    }
+    left++;
+    right--;
+  }
+
+  return true;
+};
+
+console.log(isPalindrome("A man, a plan, a canal: Panama"));
