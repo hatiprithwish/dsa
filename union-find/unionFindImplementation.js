@@ -1,4 +1,4 @@
-class UnionFind {
+export class UnionFind {
   constructor(size) {
     this.parent = new Array(size).fill(null).map((_, index) => index);
     this.rank = new Array(size).fill(1);
